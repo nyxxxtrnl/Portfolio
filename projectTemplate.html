@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<div class="project-container">
+
+  <h1 id="projectTitle">Project</h1>
+
+  <!-- Tab Navigation -->
+  <nav class="project-nav">
+    <a href="#live-system" class="tab-link active">LIVE SYSTEM</a>
+    <a href="#demo" class="tab-link">DEMO</a>
+    <a href="#screenshots" class="tab-link">SCREENSHOTS</a>
+    <a href="#documentation" class="tab-link">DOCUMENTATION</a>
+  </nav>
+
+  <!-- LIVE SYSTEM Tab -->
+  <section id="live-system" class="tab-content active">
+    <div class="card">
+      <h2>Live System</h2>
+      <a id="liveSystemLink" href="https://raketero.vercel.app/" target="_blank" class="project-link">
+        Visit Live System
+      </a>
+    </div>
+  </section>
+
+  <!-- DEMO Tab -->
+  <section id="demo" class="tab-content">
+    <div class="card">
+      <h2>Demo Video</h2>
+      <iframe id="demoFrame" width="560" height="315"
+        src="https://www.youtube.com/embed/YxcTBB6_bws?si=v74rIPLfb45vGMN4"
+        title="YouTube video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS Tab -->
+  <section id="screenshots" class="tab-content">
+    <div class="card">
+      <h2>Screenshots</h2>
+      <div class="screenshots-grid" id="screenshotsGrid">
+        <!-- Images will be added here dynamically -->
+      </div>
+      <div class="upload-buttons-section">
+        <button class="upload-btn" onclick="document.getElementById('uploadInput').click()">Upload Image</button>
+        <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+      </div>
+      <div class="save-section" id="saveSectionBtn" style="display: none;">
+        <button id="saveBtn" class="save-btn">Save Changes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTATION Tab -->
+  <section id="documentation" class="tab-content">
+    <div class="card">
+      <h2>Documentation</h2>
+      <a id="docLink" href="Requirements.pdf" target="_blank" class="project-link">
+        View Documentation
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<button class="back-btn" onclick="window.location.href='Index.html#projects'">← Back to Portfolio</button>
+
+<script src="projectTemplate.js"></script>
+</body>
+</html>

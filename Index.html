@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#portfolio">Technical</a>
+    <a href="#skills">Skills</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-container">
+  <!-- Profile Image -->
+    <div class="profile-wrapper">
+      <img id="profileImage" src="Me.jpg" alt="Profile">
+    </div>
+
+
+    <!-- Text Content -->
+    <div class="hero-text">
+      <div class="hero-tabs">
+      <h1>Trinalyn Hilario</h1>
+      <p>Student | Computer Engineering / Programmer</p>
+      <p class="desc">
+        A passionate developer who builds modern and efficient systems.
+      </p>
+      <p class="tech-skills">Technical Skills: HTML, CSS, JavaScript, Node.js, ASP.NET, Github</p>
+      <a href="https://github.com/yourusername" class="btn">Visit GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>🎓 Academic Background: Your course here</p>
+        <p>📜 Certifications: Add your badges</p>
+        <p>🎯 Career Goal: To become a successful developer</p>
+        <p>📧 Email: your@email.com</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+    <div class="card">
+        <h2>Projects</h2>
+        <div class="projects" id="projectsContainer">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Short description</p>
+                <a href="project1.html" target="_blank" class="btn">View</a>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Short description</p>
+                <a href="project2.html" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+        <div class="add-project-section">
+            <button class="add-btn" onclick="addNewProject()">+ Add Project</button>
+        </div>
+    </div>
+</section>
+
+<!-- TECHNICAL -->
+<section id="portfolio" class="fade-in">
+    <div class="card">
+        <h2>Technical Portfolio</h2>
+        <p>Detailed documentation of systems developed, including architecture, code snippets, and deployment details.</p>
+        <p>Programming Languages: HTML, CSS, JavaScript, C#</p>
+        <p>Frameworks: Node.js, ASP.NET</p>
+        <p>Technologies: Git, SQL, REST APIs</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+    <div class="card">
+        <h2>Skills & Tools</h2>
+        <p>💻 HTML, CSS, JavaScript</p>
+        <p>⚙️ Node.js, ASP.NET</p>
+        <p>🛠️ Git</p>
+    </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="fade-in">
+    <div class="card">
+        <h2>Research / Publications</h2>
+        <p>Papers or thesis related to computer engineering and programming.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: trinalynhilario.789@gmail.com
+        </p>
+        <p> Phone No. 09604494012</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
